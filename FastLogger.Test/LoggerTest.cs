@@ -13,6 +13,9 @@
             {
                 logger.Log(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt") + $" - Log Entry {i}");
             }
+
+            // Wait for all log entries to be written before the program exits
+            Thread.Sleep(2000); // Adjust this delay as needed
         }
     }
 }
